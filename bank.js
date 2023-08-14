@@ -9,7 +9,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     // console.log(email, ',', password);
 
     if (email === 'sontan@baap.gmail.com' && password === 'sontan') {
-        location.href = 'bank.html'
+        location.href = 'account.html'
     }
     else {
         alert('Please type valid username or password.')
