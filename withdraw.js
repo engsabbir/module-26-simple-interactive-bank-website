@@ -18,15 +18,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const balanceTotal = parseFloat(balanceTotalElement.innerText) - withdrawInputAmount;
 
     if (withdrawTotal > balanceTotal) {
-        alert('Bank e eto taka nai vai');
+        alert('You can not withdraw more than your balance.');
         return;
     }
-    if ((balanceTotal - withdrawTotal) < 500) {
-        alert('you must stored 500 taka in your account')
-        return;
-    }
-    withdrawTotalElement.innerText = withdrawTotal + withdrawInputAmount;
 
+    withdrawTotalElement.innerText = withdrawTotal + withdrawInputAmount;
 
     balanceTotalElement.innerText = balanceTotal;
 })
