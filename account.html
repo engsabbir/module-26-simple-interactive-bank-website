@@ -18,15 +18,15 @@
             <div class="grid grid-cols-3 gap-5 w-3/4 mx-auto mt-8 text-white">
                 <div class="bg-green-400 rounded text-center p-7">
                     <h3 class="text-3xl">Deposit</h3>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-orange-500 rounded text-center p-7">
                     <h3 class="text-3xl">Withdraw</h3>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="bg-pink-400 rounded text-center p-7">
                     <h3 class="text-3xl">Balance</h3>
-                    <h2 class="text-5xl">$<span>1250</span></h2>
+                    <h2 class="text-5xl">$<span id="balance-total">1250</span></h2>
                 </div>
             </div>
         </section>
@@ -38,14 +38,14 @@
                     <h3 class="text-4xl text-white font-medium">Deposit</h3>
                     <input id="deposit-input" class="block focus:outline-none w-3/4 my-4 px-4 py-2 rounded" type="text"
                         placeholder="$Amount you want to deposit">
-                    <button id="submit-btn"
+                    <button id="deposit-btn"
                         class=" px-3 py-2 md:px-6 bg-orange-500 hover:bg-white text-white hover:text-black font-medium rounded">Deposit</button>
                 </div>
                 <div class="bg-purple-400 rounded p-7">
                     <h3 class="text-4xl text-white font-medium">Withdraw</h3>
-                    <input id="deposit-input" class="block focus:outline-none w-3/4 my-4 px-4 py-2 rounded" type="text"
+                    <input id="withdraw-input" class="block focus:outline-none w-3/4 my-4 px-4 py-2 rounded" type="text"
                         placeholder="$Amount you want to withdraw">
-                    <button id="submit-btn"
+                    <button id="withdraw-btn"
                         class=" px-3 py-2 md:px-6 bg-orange-500 hover:bg-white text-white hover:text-black font-medium rounded">Withdraw</button>
                 </div>
             </div>
@@ -54,6 +54,7 @@
     </main>
 
     <script src="bank.js"></script>
+    <script src="deposit.js"></script>
 </body>
 
 </html>
